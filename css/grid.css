@@ -1,0 +1,87 @@
+.container{
+	width: 100%px;
+	margin: auto; /*para centrar el container*/
+}
+.row{
+	background-color: var(--light-color);
+	display: flex;
+	margin-bottom: 20px;
+}
+.col-1{
+	width: 8.333333333333333%;
+}
+.col-2{
+	width: 16.66666666666667%;
+}
+.col-3{
+	width: 25%; 
+}
+.col-4{
+	width: 33.33333333333333%;
+}
+.col-5{
+	width: 41.66666666666667%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.333333333333333%;
+}
+.col-8{
+	width: 66.66666666666666%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.33333333333333%;
+}
+.col-11{
+	width: 91.66666666666666%;
+}
+.col-12{
+	width: 100%;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+	padding: 20px;
+}
+
+
+/*Imagenes del grid*/
+.img-grid{
+	width: 100%;
+	height: auto;
+}
+
+/*Texto del grid*/
+.col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+@media (max-width: 750px){
+	.row{
+		flex-direction: column;
+	}
+	.row-reverse{
+		flex-direction: column-reverse;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+		width: 100%;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+		padding: 0px;
+	}
+	.col p{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.col button{
+    	margin-bottom: 15px;
+	}
+	
+}

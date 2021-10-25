@@ -1,0 +1,308 @@
+:root{
+	--dark-color: #415E55;
+	--medium-color: #9AAC81;
+	--light-color: #E6F1D8;
+	--text-color: #414141;
+	--title-color: #BC0000;
+	--header-color: white;
+	--text-style: 'Libre Baskerville', serif;
+	--header-style: 'Bevan', cursive;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+/*-----------Estilos generales de texto--------------*/
+h1{
+	font-size: 5rem;
+	font-family:var(--header-style);
+	color: var(--header-color);
+}
+h2{
+	color: var(--title-color);
+	font-size: 2.3rem;
+	font-family: var(--text-style);
+	font-style: italic;
+	font-weight: 100;
+	text-align: center;
+}
+h3{
+	color: var(--text-color);
+	font-size: 1.6rem;
+	font-family: var(--text-style);
+	font-weight: 100;
+	line-height: 2;
+}
+h4{
+	color: var(--header-color);
+	font-family: var(--text-style);
+	font-style: italic;
+	font-size: 1.2rem;
+	font-weight: 100;
+}
+h5{
+	color: white;
+	font-family: var(--text-style);
+	font-style: italic;
+	font-size: 1.6rem;
+	font-weight: 100;
+}
+p{
+	font-family: var(--text-style);
+	font-size: 1.5rem;
+	color: var(--text-color);
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	cursor: pointer;
+}
+/*-----------Estilos generales de texto--------------*/
+
+
+/*--------------Aquí empieza el nav-------------*/
+nav{
+	background-color: var(--dark-color);
+	color: var(--header-color);	
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	height: 50px;
+	width: auto;
+	padding-left: 10px;
+}
+nav ul{
+	display: flex;
+}
+.nav-options{
+	padding-right: 20px;
+}
+.nav-options li{
+	list-style: none;
+	padding-left: 15px;
+	font-size: 1.6rem;
+	font-family: var(--text-style);
+	font-style: italic;
+}
+.nav-options li::after{
+	content: " |";
+}
+.nav-options a{
+	color: var(--header-color);
+}
+.nav-options a:hover{
+	color: var(--light-color);
+}
+
+/*--------------Aquí termina el nav-------------*/
+
+
+/*--------------------Aquí empieza la imagen de cabecera de la home-------------------*/
+.first-header{
+	display: flex;
+	justify-content: center;
+}
+.first-header img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: center;
+}
+.box-header{
+	border: 10px solid white;
+	align-self: center;
+	position: absolute;
+}
+.box-header h1{
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+
+/*--------------------Aquí termina la imagen de cabecera de la home-------------------*/
+
+/*-----------------Aquí empieza el main--------------------------*/
+main{
+	margin-top: 100px;
+}
+main h3{
+	text-align: center;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+main h2{
+	margin-top: 10px;
+}
+.box-img{
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	flex-wrap: wrap;
+}
+.animal_icon{
+	width: 200px;
+	padding: 20px;
+}
+.animal_icon:hover{
+	opacity: 0.8;
+}
+.items_content{
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+}
+.volunteers{
+	background-color: var(--light-color);
+	padding-top: 50px;
+	height: auto;
+	padding-bottom: 200px;
+	margin-top: 50px;
+}
+.img-volunteer{
+	height: 170px;
+	width: 170px;
+	object-fit: cover;
+	border-radius: 100px;
+	margin: 20px;
+}
+
+.btn{
+	display: flex;
+	justify-content: center;
+}
+button, #submit{
+	background-color: var(--medium-color);
+	margin-top: 10px;
+	padding: 10px 25px;
+	color: var(--header-color);
+	font-family: var(--text-style);
+	font-style: italic;
+	border-radius: 30px;
+	border: transparent;
+	font-size: 2rem;
+}
+button:hover, #submit:hover{
+	background-color: var(--dark-color);
+	cursor: pointer;
+}
+
+/*------------------Main página perros y gatos------------------------*/
+.latest-row{
+	padding-bottom: 200px;
+}
+
+/*-----------------Aquí termina el main--------------------------*/
+
+
+/*-----------------Aquí empieza el pie de página-------------------------*/
+footer{
+	background-color: var(--dark-color);
+	height: 180px;
+	border-radius: 100% 100% 0% 0%;
+	margin-top: -180px;
+	position: relative;
+	z-index:2;
+}
+.link{
+	color: var(--header-color);	
+}
+.link:hover{
+	color: var(--light-color);
+	font-size: 1.8rem;
+}
+.rrss-icon{
+	height: 50px;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 30px;
+}
+.rrss-icon:hover{
+	opacity: 0.8;
+}
+/*-----------------Aquí termina el pie de página--------------------------*/
+
+/*-----------------Aquí empieza la seccion del formulario-------------------------*/
+.container-form{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.container-form p{
+	width: 80%;
+	margin: auto;
+	line-height: 2;
+	padding-bottom: 100px;
+}
+.row-form{
+	width: 100%;
+	background-color: var(--light-color);
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;	
+	flex-wrap: wrap;
+}
+
+#email, #subject, #message, #submit{
+	display: block;
+}
+input, textarea{
+	font-family: var(--text-style);
+	font-size: 1.4rem;
+	padding: 7px;
+	margin: 7px;
+	border-radius: 10px;
+	border: solid 1px var(--medium-color);
+}
+
+#name{
+	width: 250px;
+}
+#number{
+	width: 216px;
+}
+#subject, #email{
+	width: 500px;
+}
+#message{
+	width: 500px;
+	height: 100px;
+}
+#submit{
+	margin-bottom: 200px;	
+}
+
+/*-----------------Aquí termina el formulario--------------------------*/
+
+
+/*-----------------Aquí empieza la pantalla de resultado de pago-----------------*/
+.payment_result{
+	background-color: var(--medium-color);
+}
+.main-payment_result{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 300px;
+}
+.main-payment_result h1{
+	margin-bottom: -10px;
+}
+.main-payment_result a{
+	color: var(--dark-color);
+}
+.gif{
+	width: 250px;
+	height: auto;
+}
+/*-----------------Aquí empieza la pantalla de resultado de pago-----------------*/
